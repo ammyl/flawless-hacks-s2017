@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Once Upon a Time</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+		<!-- jquery -->
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+		<p>There was a young GENDER named {{ newStory.Characters.name }}. From a young age, it was determined in the prophecy that this young GENDER would become our HERO. 
+
+		<!--[INSERT USER’S DRAWING OF HERO]-->
+
+		Behold the great {{ newStory.Characters.name }}!
+
+		Let me show you how our young {{ newStory.Characters.name }} fights evil in our modern day. 
+
+		At age 5, during gym class, {{ newStory.Characters.name }} witnessed {{ newStory.Characters.pronoun }} classmate Billy picking on Sally, saying, “Girl’s don’t play basketball!”
+
+		{{ newStory.Characters.name }} flew to action immediately,  {{ newStory.Characters.verb[0] }}-ING Billy and stopping him from bothering Sally. Sally was thankful to {{ newStory.Characters.name }} and Billy never bothered Sally ever again.
+
+		At age 17, while at {{ newStory.Characters.pronoun }} locker after school, {{ newStory.Characters.pronoun }} overheard a conversation.  {{ newStory.Characters.pronoun }}’s classmate Joseph was yelling at Sandra after she had yelled at him for knocking down her NOUN. 
+
+		<!--NOUN ^ = [INSERT DRAWING OF SCHOOLWORK]-->
+
+		Joseph scoffed and said, “Whatever Sandra, why don’t you go back to the kitchen where you belong?” 
+
+		On cue, our hero {{ newStory.Characters.name }} sprung into action, {{ newStory.Characters.verb[1] }} Joseph and defending Sandra. Joseph ran off in embarrassment and {{ newStory.Characters.name }} helped Sandra clean up her science project.
+
+		At age 40, {{ newStory.Characters.name }} held his 8 year old daughter as she cried about a Janet in her class who called her names. {{ newStory.Characters.pronoun }} lept into action by making {{ newStory.Characters.noun }} with her for her class. 
+
+		<!--[FOOD = INSERT DRAWING]-->
+
+		Everyone in the class received a piece of {{ newStory.Characters.noun }} even Janet, who later sheepishly apologized for the previous day.
+
+		At age 84, {{ newStory.Characters.name }} was waiting for {{ newStory.Characters.pronoun }} grandson to come visit {{ newStory.Characters.pronoun }} with his pregnant wife. 
+
+		When they arrived, {{ newStory.Characters.name }} greeted the happy couple with open arms. 
+
+		They got on the topic of the couple’s future daughter. “She can be a boxer like her old man,” said the grandson. 
+
+		“I think it’d be better for her to do something more fitting like tennis or ballet.
+
+		{{ newStory.Characters.name }} smiled, and said “Why don’t we let her pick?”
+
+		And so {{ newStory.Characters.girlName }} went on to be INSERT DREAM HERE. 
+
+		<!-- DREAM should be gotten from using CLARIFAI-->
+
+	</body>
+</html>
