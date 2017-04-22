@@ -19,12 +19,22 @@
 	<body>
 		
 		<form action = "/page1" method = "get">
-			<p>Once upon a time, there was a girl named</p>
+			<p>Once upon a time, there was a young </p>
+
+			<input type="text" class = "custom" name="char_gender" placeholder = "type your gender here">
+			<!-- <input type="submit" class="custom button" value="submit"> -->
+
+			<p>named</p>
 
 			<input type="text" class = "custom" name="char_name" placeholder = "type your name here">
 			<!-- <input type="submit" class="custom button" value="submit"> -->
 			
+			<p>.</p>
+
 			<input type="submit" value="Submit">
+
+			<p>From a young age, it was determined in the prophecy that this young {{ newStory.Characters.gender }} who would become our HERO.
+
 		</form>
 		
 	</body>
