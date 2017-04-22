@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Once Upon a Time</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+		<!-- jquery -->
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+		
+		{{ newStory.Characters.mainCharacter }}
+		
+	</body>
+</html>

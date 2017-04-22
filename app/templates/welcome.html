@@ -1,26 +1,30 @@
 <html>
 	<head>
-		<title>flawless hacks spring 2017</title>
+		<title>Once Upon a Time</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+
+		<!-- custom css -->
 		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-		<script src ="js/typed.js"></script>
-		<script>
-			$(".message").typed({
-					string: ["Once upon a time, there was a girl named"],
-					typeSpeed: 60,
-					loop: false,
-					contentType: 'text'
-			});
-		</script>
+
+		<!-- jquery -->
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- typing effect script -->
+		<script src ="{{url_for('static', filename='typed.js')}}"></script>
+
+		<!-- custom javascript -->
+		<script type="text/javascript" scr ="{{url_for('static', filename='script.js')}}"></script>
 	</head>
 	<body>
-		<div class="container-fluid">
-			<p><span class = "message"></span></p>
-			<form action = "/page1" method = "get">
-				<input type"text" name="name" >
-				<input type="submit" value="Submit">
-			</form>
-		</div>
+		<span class = "message"></span>
+		
+		<form action = "/page1" method = "get">
+			<p>Once upon a time, there was a girl named</p>
+			<input type"text" class = "custom" name="char_name" placeholder = "type your name here">
+			<!-- <input type="submit" class="custom button" value="submit"> -->
+			<input type="submit" value="Submit">
+		</form>
+		
 	</body>
 </html>

@@ -17,15 +17,17 @@ class Story:
     
     
 
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET', 'POST'])
 def home():
-    newStory = Story
-    newStory.mainCharacter = name
     return render_template('welcome.html')
 
-@app.route('/1',methods=['GET'])
+@app.route('/page1',methods=['GET'])
 def page1():
-    return render_template('page1.html')
+    newStory = Story
+    newStory.Characters.mainCharacter = char_name
+    # newStory.Characters.mainCharacter = request.args[charName]
+
+    return render_template('page1.html', newStory = newStory)
 
 if __name__ == "__main__":
     app.run(debug=True)
