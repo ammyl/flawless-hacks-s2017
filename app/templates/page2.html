@@ -12,12 +12,15 @@
 
 	</head>
 	<body>
-		<p>
-		Behold the great {{ newStory.Characters.name }}!
-
-		<!-- try to insert the image that the user drew here-->
-
-		Let me show you how our young {{ newStory.Characters.name }} fights evil in our modern day. 
-		</p>
+		<form action = "/page3" method = "get">
+			<p>
+				Behold the great {{ newStory.Characters.name }}!
+			<!-- try to insert the image that the user drew here-->
+			</p>
+			<p>
+				Let me show you how our young {{ newStory.Characters.name }} fights evil in our modern day. 
+			</p>
+			<input type="submit" value="Submit">
+		</form>
 	</body>
 </html>
