@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Rendezvous</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<img src="\static\logo.png" height ="150px" width="150px">
+			<br>
+			<h1>Rendezvous</h1>
+			<p></p>
+			<form action = "/schedule" method = "get">
+				Where you at? (CITY, STATE)<br><br>
+				<input type"text" name="city_state"><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</body>
+</html>
