@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Once Upon a Time</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+		<!-- jquery -->
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+		
+		<p> At age 5, during gym class, {{ newStory.Characters.name }} witnessed  classmate Billy picking on Sally, saying, “Girl’s don’t play basketball!” </p>
+
+		<p> {{ newStory.Characters.name }} flew to action immediately,  <input type="text" class = "custom" name="verbs" placeholder = "type what you want to do to BILLY here">
+			<!-- <input type="submit" class="custom button" value="submit"> -->
+ -ing Billy and stopping him from bothering Sally. Sally was thankful to {{ newStory.Characters.name }} and Billy never bothered Sally ever again. </p>
+		
+	</body>
+</html>

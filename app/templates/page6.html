@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Once Upon a Time</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+		<!-- jquery -->
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+		<p>
+		Everyone in the class received a piece of FOOD, even Janet, who later sheepishly apologized for the previous day.
+
+		At age 84, {{ newStory.Characters.name }} was waiting for {{ newStory.Characters.pronoun }} grandson to come visit {{ newStory.Characters.pronoun }} with his pregnant wife. 
+
+		When they arrived, {{ newStory.Characters.name }} greeted the happy couple with open arms. 
+
+		They got on the topic of the couple’s future daughter. “She can be a boxer like her old man,” said the grandson. 
+
+		“I think it’d be better for her to do something more fitting like tennis or ballet.
+
+		{{ newStory.Characters.name }} smiled, and said “Why don’t we let her pick?”
+
+		And so <input type="text" class = "custom" name="girlName" placeholder = "great grand daughter's name">
+		
+		went on to be a INSERT DREAM HERE. 
+
+		</p>
+	</body>
+</html>
