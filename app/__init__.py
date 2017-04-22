@@ -21,10 +21,11 @@ class Story:
 def home():
     return render_template('welcome.html')
 
-@app.route('/page1',methods=['GET'])
+@app.route('/page1',methods=['GET', 'POST'])
+# , result=request.form['char_name']
 def page1():
     newStory = Story
-    newStory.Characters.mainCharacter = char_name
+    newStory.Characters.mainCharacter = request.args['char_name']
     # newStory.Characters.mainCharacter = request.args[charName]
 
     return render_template('page1.html', newStory = newStory)
