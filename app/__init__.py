@@ -12,7 +12,8 @@ def home():
 
 @app.route('/page1',methods=['GET', 'POST'])
 def page1():
-    newStory.Characters.mainCharacter = request.args['char_name']
+    newStory.Characters.name = request.args['char_name']
+    newStory.Characters.gender = request.args['char_gender']
     return render_template('page1.html', newStory = newStory)
 
 @app.route('/page2',methods=['GET', 'POST'])

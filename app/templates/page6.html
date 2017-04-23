@@ -12,23 +12,25 @@
 
 	</head>
 	<body>
-		<p>
-		Everyone in the class received a piece of FOOD, even Janet, who later sheepishly apologized for the previous day.
+		<form action = "/yourstory" method = "get">	
+			<p>
+			Everyone in the class received a piece of FOOD, even Janet, who later sheepishly apologized for the previous day.
 
-		At age 84, {{ newStory.Characters.name }} was waiting for {{ newStory.Characters.pronoun }} grandson to come visit {{ newStory.Characters.pronoun }} with his pregnant wife. 
+			At age 84, {{ newStory.Characters.name }} was waiting for {{ newStory.Characters.pronoun }} grandson to come visit {{ newStory.Characters.pronoun }} with his pregnant wife. 
 
-		When they arrived, {{ newStory.Characters.name }} greeted the happy couple with open arms. 
+			When they arrived, {{ newStory.Characters.name }} greeted the happy couple with open arms. 
 
-		They got on the topic of the couple’s future daughter. “She can be a boxer like her old man,” said the grandson. 
+			They got on the topic of the couple’s future daughter. “She can be a boxer like her old man,” said the grandson. 
 
-		“I think it’d be better for her to do something more fitting like tennis or ballet.
+			“I think it’d be better for her to do something more fitting like tennis or ballet.
 
-		{{ newStory.Characters.name }} smiled, and said “Why don’t we let her pick?”
+			{{ newStory.Characters.name }} smiled, and said “Why don’t we let her pick?”
 
-		And so <input type="text" class = "custom" name="girlName" placeholder = "great grand daughter's name">
+			And so <input type="text" class = "custom" name="girlName" placeholder = "great grand daughter's name">
 		
-		went on to be a INSERT DREAM HERE. 
-
-		</p>
+			went on to be a INSERT DREAM HERE. 
+			<input type="submit" value="Submit">
+			</p>
+		</form>
 	</body>
 </html>
