@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, redirect, url_for
 from Story import *
+from clarifaiTags import *
 
 app = Flask(__name__) 
     
@@ -19,10 +20,12 @@ def page1():
 @app.route('/page2',methods=['GET', 'POST'])
 def page2():
     newStory
+
     return render_template('page2.html', newStory = newStory)
 
 @app.route('/page3',methods=['GET', 'POST'])
 def page3():
+    #print(clarifaiTags.tags(file))
     return render_template('page3.html', newStory = newStory)
 
 @app.route('/page4',methods=['GET', 'POST'])
