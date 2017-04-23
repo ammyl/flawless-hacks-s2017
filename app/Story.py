@@ -6,6 +6,7 @@ class Story:
         pronoun = ""
         # "this is the name of the great-granddaughter"
         girlName = ""
+        dream = ""
         
     class Phrases:
         adjs = ["kind", "", "", "", ""]
